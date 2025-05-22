@@ -177,7 +177,7 @@ class Avto
                 {
                     Console.WriteLine($"Не доедем... Нужно {toplivo_nado_dist_2:F2} л. Заправиться?\n1.Да\n2.Нет");
                     Console.Write("Введите номер ответа: ");
-                    if ((int.TryParse(Console.ReadLine(), out vvod_vopros)) && (vvod_vopros != 1 || vvod_vopros != 2))
+                    if ((int.TryParse(Console.ReadLine(), out vvod_vopros)) && (vvod_vopros == 1 || vvod_vopros == 2))
                         break;
                     else
                         Console.WriteLine("Не тот формат");
